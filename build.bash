@@ -11,7 +11,7 @@ IFS=$'\n\t'
 
 if ! (rustc --version | grep -Eq "^rustc 1.14.0 \(e8a012324 2016-12-16\)$")
 then
-    echo "This script requires rust version 0.14.0. The best way to install"
+    echo "This script requires rust version 1.14.0. The best way to install"
     echo "it is with a program called 'rustup' which you can get here:"
     echo "https://rustup.rs/"
     exit 1
