@@ -9,17 +9,17 @@ IFS=$'\n\t'
 # Version checks with instructions on how to fix the issue
 #
 
-if ! (rustc --version | grep -Eq "^rustc 1.14.0 \(e8a012324 2016-12-16\)$")
+if ! (rustc --version | grep -Eq "^rustc 1.17.0 \(56124baa9 2017-04-24\)$")
 then
-    echo "This script requires rust version 1.14.0. The best way to install"
+    echo "This script requires rust version 1.17.0. The best way to install"
     echo "it is with a program called 'rustup' which you can get here:"
     echo "https://rustup.rs/"
     exit 1
 fi
 
-if ! (cargo --version | grep -Eq "^cargo 0.15.0-nightly \(298a012 2016-12-20\)$")
+if ! (cargo --version | grep -Eq "^cargo 0.18.0 \(fe7b0cdcf 2017-04-24\)$")
 then
-    echo "This script requires cargo version 0.15.0-nightly."
+    echo "This script requires cargo version 0.18.0."
     echo "The best way to install it is by installing rust 1.14.0 with"
     echo "a program called 'rustup' which you can get here:"
     echo "https://rustup.rs/"
